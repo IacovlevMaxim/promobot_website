@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Promobot - Commands</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Most effective and easy-to-use promotion bot on Discord!">
+  <meta name="viewport" content="width=device-width">
+  <link rel="apple-touch-icon-precomposed" href="media/favicon.png">
+  <link rel="icon" href="media/favicon.png">
+  <link rel="mask-icon" href="media/favicon.svg" color="rgb(36,38,58)">
+  <link rel="shortcut icon" href="media/favicon.png">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="page page-home preload">
+    <header class="header-main dark">
+        <nav>
+          <a href="/" class="logo" rel="home"><object data="media/favicon.svg" width="24" height="24"> </object><span>PromoBot</span></a>
+          <div class="nav-toggle"></div>
+          <ul class="inline">
+            <li><a href="/" class="active">Home</a></li>
+            <li><a href="/terms">Terms</a></li>
+            <li><a href="/privacy">Privacy Policy</a></li>
+            <li><a href="/staff">Staff</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <section class="bg-gradient-dark center padding padding-top">
+        <div class="max-width-m dark">
+          <h1 class="hero dark">Promobot Commands</h1>
+        </div>
+      </section>
+
+      <section class="bg-gradient-dark padding padding-top full-width">
+        <div class="max-width-l dark">
+            <h4>Setup commands</h4>
+            <p class="muted">All setup commands are only usable in a guild</p>
+            <table class="dark table-responsive">
+                <tbody>
+                    <tr>
+                        <th scope="col">Command</th>
+                        <th scope="col">Aliases</th>
+                        <th scope="col">Description</th>
+                        <th scope="col">Example</th>
+                        <th scope="col">User Permissions</th>
+                        <th scope="col">Bot Permissions</th>
+                    </tr>
+                    <tr>
+                        <td style="color:crimson">setup</td>
+                        <td>start</td>
+                        <td>Sets up the bot on current server (bot will walk you through all necessary steps) <br />
+                            <em>Note: <a href="/setup-gif">click here to see setup tutorial</a></em>
+                        </td>
+                        <td>pr$setup</td>
+                        <td rowspan="5">Manage Channels, Manage Messages</td>
+                        <td>View Channel, Send Messages, Embed Links, Create Instant Invite, Manage Server</td>
+                    </tr>
+                    <tr>
+                        <td style="color:cyan">category</td>
+                        <td>setCategory</td>
+                        <td>Sets up category of current server</td>
+                        <td>pr$category rocketleague</td>
+                        
+                        <td rowspan="4">View Channel, Send Messages, Embed Links</td>
+                    </tr>
+                    <tr>
+                        <td style="color:cyan">channel</td>
+                        <td>setChannel</td>
+                        <td>Channel where messages from other servers will be sent.</td>
+                        <td>pr$channel <p style="color:#DEE0FC"><strong>#promo</strong></p></td>
+                        
+                        
+                    </tr>
+                    <tr>
+                        <td style="color:cyan">invite</td>
+                        <td>setInvite</td>
+                        <td>Sets the invite that will be promoted together with the promotion message</td>
+                        <td>pr$invite https://discord.gg/dXES6RYtAq</td>
+                        
+                        
+                    </tr>
+                    <tr>
+                        <td style="color:cyan">message</td>
+                        <td>setMessage</td>
+                        <td>Sets the self promo message of this server. </td>
+                        <td>pr$message Your promo message!</td>
+                        
+                        
+                    </tr>
+                </tbody>
+            </table>
+
+            <br />
+
+            <h4>Info commands</h4>
+            <table class="dark table-responsive">
+                <tbody>
+                    <tr>
+                        <th scope="col">Command</th>
+                        <th scope="col">Aliases</th>
+                        <th scope="col">Description</th>
+                        <th scope="col">Example</th>
+                        <th scope="col">Required Permissions</th>
+                    </tr>
+                    <tr>
+                        <td style="color:cyan">categories</td>
+                        <td>sections</td>
+                        <td>Prints all currently valid categories</td>
+                        <td>pr$categories</td>
+                        <td rowspan="2">View Channel, Send Messages</td>
+                    </tr>
+                    <tr>
+                        <td style="color:cyan">addme</td>
+                        <td rowspan="5" class="center">None</td>
+                        <td>Sends an invite link to add the bot</td>
+                        <td>pr$addme</td>
+                    </tr>
+                    <tr>
+                        <td style="color:cyan">info</td>
+                        <td>Embed that shows bot's commands and basic usage</td>
+                        <td>pr$info</td>
+                        <td rowspan="5">View Channel, Send Messages, Embed Links</td>
+                    </tr>
+                    <tr>
+                        <td style="color:cyan">myVote</td>
+                        <td>Sends info about user's last vote</td>
+                        <td>pr$myVote</td>
+                    </tr>
+                    <tr>
+                        <td style="color:cyan">permissions</td>
+                        <td>Why does PromoBot require these permissions?</td>
+                        <td>pr$permissions</td>
+                    </tr>
+                    <tr>
+                      <td style="color:cyan">vote</td>
+                      <td>Sends an invite link to vote for the bot on top.gg</td>
+                      <td>pr$vote</td>
+                    </tr>
+                    <tr>
+                        <td style="color:cyan">privacy</td>
+                        <td>privacyPolicy, policy</td>
+                        <td>Sends <a href="about.html">Promobot Privacy Policy</a></td>
+                        <td>pr$privacy</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br />
+
+            <h4>Utility commands</h4>
+            <table class="dark table-responsive">
+                <tbody>
+                    <tr>
+                        <th scope="col">Command</th>
+                        <th scope="col">Description</th>
+                        <th scope="col">Example</th>
+                        <th scope="col">Required Permissions</th>
+                    </tr>
+                    <tr>
+                        <td style="color:cyan">ping</td>
+                        <td>Pong! Checks the bot's ping to the Discord server.</td>
+                        <td>pr$ping</td>
+                        <td rowspan="3">View Channel, Send Messages</td>
+                    </tr>
+                    <tr>
+                        <td style="color:cyan">prefix</td>
+                        <td>Shows or sets the command prefix.</td>
+                        <td>@PromoBot#7792 prefix <br /> pr$prefix</td>
+                    </tr>
+                    <tr>
+                        <td style="color:cyan">help</td>
+                        <td>Displays a list of available commands, or detailed information for a specified command.</td>
+                        <td>pr$help <br /> pr$help ping</td>
+                    </tr>
+                </tbody>
+            </table>
+          </div>
+      </section>
+
+      <section class="bg-gradient-dark padding">
+        <footer>
+          <div class="row center-desktop max-width-l padding-top dark">
+              <div class="col-one-fifth dark"></div>
+              <div class="col-two-fifths dark">
+                <h6>PromoBot</h6>
+                <p>PromoBot is discord bot oriented to help smaller communities grow. It splits all servers in categories, and promotes your server where users will find it most relevant!</p>
+              </div>
+              <div class="col-two-fifths dark">
+                <h6>Connect</h6>
+                <ul class="blank">
+                  <li><a href="https://twitter.com/DiscordPromobot">Twitter</a></li>
+                  <li><a href="https://top.gg/bot/776897904404987946">Top.gg</a></li>
+                  <li><a href="https://botsfordiscord.com/bot/776897904404987946/">Bots For Discord</a></li>
+                  <li><a href="https://discordbotlist.com/bots/promobot">Discord Bot List</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <p class="copyright dark center muted padding-top"><span>HTML Template by </span><a href="https://uiuxassets.com/" target="_blank">UI/UX Assets</a><span> - © 2021, all rights reserved.</span></p>
+        </footer>
+      </section>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

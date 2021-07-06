@@ -1,0 +1,18 @@
+{
+  "name": "promobot_website",
+  "version": "1.0.0",
+  "description": "PromoBot Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "ip": "^1.1.5",
+    "node-fetch": "^2.6.1",
+    "request-ip": "^2.1.3"
+  }
+}
