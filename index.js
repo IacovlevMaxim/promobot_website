@@ -35,7 +35,7 @@ app.get('/setup-gif', (req, res) => {
 
 
 app.get('/discordapi/user/:id', async(req, res) => {
-    if(req.ip != "::1") return res.sendStatus(403);
+    if(req.ip != "127.0.0.1") return res.status(403).send;
 
     if(!req.params.id || isNaN(req.params.id) || req.params.id.length != 18) return res.sendStatus(400);
 

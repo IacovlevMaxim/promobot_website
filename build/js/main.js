@@ -74,7 +74,7 @@ function ip_local()
 }
 
 async function getUser(id) {
-  return fetch(`http://localhost:3000/discordapi/user/${id}`, {
+  return fetch(`https://promobot.xyz/discordapi/user/${id}`, {
     method: 'GET'
   })
   .catch(console.error);
