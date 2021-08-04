@@ -31,11 +31,15 @@ app.get('/privacy', (req, res) => {
 
 app.get('/setup-gif', (req, res) => {
     res.sendFile('/build/setup_gif.html', { root: __dirname });
-})
+});
+
+app.get('/setup', (req, res) => {
+    res.sendFile('/build/setup.html', { root: __dirname });
+});
 
 
 app.get('/discordapi/user/:id', async(req, res) => {
-    if(req.ip != "127.0.0.1") return res.status(403).send;
+    if(req.ip != "127.0.0.1") return res.status(403).send('Invalid IP');
 
     if(!req.params.id || isNaN(req.params.id) || req.params.id.length != 18) return res.sendStatus(400);
 
